@@ -8,10 +8,20 @@
 </head>
 <body>
 
-    <nav>
-        <button onclick="showSection('products')">Products</button>
-        <button onclick="showSection('services')">Services</button>
-    </nav>
+    <header>
+        <h1>Welcome to Ankit Electricals</h1>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('products')">Products</button>
+            <button onclick="showSection('services')">Services</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Best Electrical Items in Baramati!</h2>
+        <p>Find the best quality fans, bulbs, and other electrical appliances here.</p>
+    </section>
 
     <!-- Products Section -->
     <section id="products" class="hidden">
@@ -21,6 +31,8 @@
             <div class="item">Table Fans</div>
             <div class="item">LED Bulbs</div>
             <div class="item">Tube Lights</div>
+            <div class="item">Electrical Wires</div>
+            <div class="item">Switches & Sockets</div>
         </div>
     </section>
 
@@ -32,7 +44,16 @@
             <div class="item">Installation</div>
             <div class="item">Maintenance</div>
             <div class="item">Repair Services</div>
+            <div class="item">Home Automation</div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="hidden">
+        <h2>Contact Us</h2>
+        <p>Email: info@ankitelectricals.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: In Heart of Baramati</p>
     </section>
 
     <script src="script.js"></script>
