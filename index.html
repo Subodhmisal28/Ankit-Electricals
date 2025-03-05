@@ -3,60 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ankit Electricals - Best Electrical Products in the heart of Baramati">
-    <meta name="keywords" content="Electricals, Fans, Baramati, Best Electrical Items, Ankit Electricals">
-    <meta name="author" content="Ankit Electricals">
-    <title>Ankit Electricals - Home</title>
-   <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Ankit Electricals</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Ankit Electricals Logo" class="logo">
-        <h1>Welcome to Ankit Electricals</h1>
-        <p>Best Electrical Products in the Heart of Baramati</p>
-    </header>
+
     <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <button onclick="showSection('products')">Products</button>
+        <button onclick="showSection('services')">Services</button>
     </nav>
-    <section id="home">
-        <h2>About Us</h2>
-        <p>Providing top-quality electrical products including fans, wires, switches, and more.</p>
-    </section>
-    <section id="products">
+
+    <!-- Products Section -->
+    <section id="products" class="hidden">
         <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="fan.jpg" alt="Ceiling Fan">
-                <h3>Ceiling Fan</h3>
-                <p>High-quality ceiling fans with energy efficiency.</p>
-            </div>
-            <div class="product">
-                <img src="wires.jpg" alt="Electrical Wires">
-                <h3>Electrical Wires</h3>
-                <p>Durable and high-conductivity wires for all needs.</p>
-            </div>
-            <div class="product">
-                <img src="switches.jpg" alt="Switches">
-                <h3>Switches</h3>
-                <p>Premium switches with long life and safety features.</p>
-            </div>
+        <div class="grid">
+            <div class="item">Ceiling Fans</div>
+            <div class="item">Table Fans</div>
+            <div class="item">LED Bulbs</div>
+            <div class="item">Tube Lights</div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+
+    <!-- Services Section -->
+    <section id="services" class="hidden">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="item">Electrical Wiring</div>
+            <div class="item">Installation</div>
+            <div class="item">Maintenance</div>
+            <div class="item">Repair Services</div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2025 Ankit Electricals. All rights reserved.</p>
-    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
